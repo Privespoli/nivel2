@@ -1,0 +1,22 @@
+body { font-family: sans-serif; max-width: 600px; margin: auto; padding: 20px; background: #f0f2f5; }
+h1 { padding: 10px; border-radius: 5px; color: white; margin-top: 40px; }
+.titulo-n1 { background: #4a90e2; }
+.titulo-n2 { background: #2ecc71; }
+.titulo-n3 { background: #f1c40f; color: #333; }
+.titulo-n4 { background: #e74c3c; }
+
+.ejercicio { 
+    background: white; 
+    padding: 15px; 
+    margin: 10px 0; 
+    border-radius: 8px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input, button { padding: 10px; border-radius: 5px; border: 1px solid #ddd; }
+button { cursor: pointer; background: #333; color: white; font-weight: bold; }
+button:hover { opacity: 0.8; }
+p { margin: 0; font-weight: bold; color: #444; }

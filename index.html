@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios 09.04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="titulo-n1"> Nivel 1</h1>
+    
+    <section class="ejercicio">
+        <h3>1 El Saludo Mágico</h3>
+        <input type="text" id="nombreUsuario" placeholder="Nombre">
+        <button onclick="saludoMagico()"> Saludo</button>
+        <p id="resSaludo"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>2 Calculadora Perruna</h3>
+        <input type="number" id="edadPerro" placeholder="Edad del perro">
+        <button onclick="calcularEdadPerruna()">Convertir a años humanos</button>
+        <p id="resPerro"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>3 Semáforo Inteligente</h3>
+        <input type="text" id="colorSemaforo" placeholder="Color (rojo, amarillo, verde)">
+        <button onclick="controlSemaforo()">¿Qué hago?</button>
+        <p id="resSemaforo"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>4 El Número Secreto</h3>
+        <input type="number" id="intentoNumero" placeholder="Adivina (1 al 10)">
+        <button onclick="adivinarNumero()">Probar suerte</button>
+        <p id="resSecreto"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>5 Repetidor de Deseos</h3>
+        <input type="text" id="deseoTexto" placeholder="Tu deseo">
+        <input type="number" id="deseoCantidad" placeholder="¿Cuántas veces?">
+        <button onclick="repetirDeseo()">¡Cumplir!</button>
+        <p id="resDeseos"></p>
+    </section>
+
+
+    <h1 class="titulo-n2"> Nivel 2</h1>
+
+    <section class="ejercicio">
+        <h3>1 Lista de Supermercado</h3>
+        <input type="text" id="productoInput" placeholder="Nuevo producto">
+        <button onclick="agregarProducto()">Añadir</button>
+        <p id="resultadoLista"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>2 Tabla de Multiplicar (Consola F12)</h3>
+        <input type="number" id="numeroTabla" placeholder="Número">
+        <button onclick="generarTabla()">Generar</button>
+    </section>
+
+    <section class="ejercicio">
+        <h3>3 Contador de letras "A"</h3>
+        <input type="text" id="palabraInput" placeholder="Palabra">
+        <button onclick="contarAs()">Contar</button>
+        <p id="resultadoVocales"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>4 Filtro de Mayores de 18</h3>
+        <button onclick="filtrarEdades()">Filtrar [12, 18, 25, 10, 30]</button>
+        <p id="resultadoFiltro"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>5 Celsius a Fahrenheit</h3>
+        <input type="number" id="celsiusInput" placeholder="Grados °C">
+        <button onclick="convertirClima()">Convertir</button>
+        <p id="resultadoClima"></p>
+    </section>
+
+
+    <h1 class="titulo-n3">Nivel 3</h1>
+
+    <section class="ejercicio">
+        <h3>1 El Objeto Coche</h3>
+        <p id="estadoCoche">Estado: Apagado 🔴</p>
+        <button onclick="probarCoche()">Arrancar Coche</button>
+    </section>
+
+    <section class="ejercicio">
+        <h3>2 Generador de Username</h3>
+        <input type="text" id="nombreCompleto" placeholder="Nombre y Apellido">
+        <button onclick="generarUser()">Crear Usuario</button>
+        <p id="resUsuario"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>3 FizzBuzz (Consola F12)</h3>
+        <button onclick="ejecutarFizzBuzz()">Ejecutar 1 al 50</button>
+    </section>
+
+    <section class="ejercicio">
+        <h3>4 Suma de Carrito</h3>
+        <button onclick="calcularCarrito()">Sumar: Camisa(20), Pantalón(40), Gorra(15)</button>
+        <p id="resCarrito"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>5 Validación de Password</h3>
+        <input type="password" id="passInput" placeholder="Tu contraseña">
+        <button onclick="validarPass()">Validar</button>
+        <p id="resPass"></p>
+    </section>
+
+
+    <h1 class="titulo-n4"> Nivel 4</h1>
+
+    <section class="ejercicio">
+        <h3>1 Sistema de Biblioteca</h3>
+        <button onclick="gestionarPrestamo()">Tomar Prestado "El Quijote"</button>
+        <p id="resLibro">Estado: Disponible</p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>2 Adivina el Número Pro (1-100)</h3>
+        <input type="number" id="inputPro" placeholder="Número">
+        <button onclick="jugarAdivinaPro()">Probar</button>
+        <p id="resPistas">Intentos: 5</p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>3 Buscador de Palíndromos</h3>
+        <input type="text" id="fraseInput" placeholder="Ej: Anita lava la tina">
+        <button onclick="verificarPalindromo()">Verificar</button>
+        <p id="resPalindromo"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>4 Simulador de Cajero</h3>
+        <input type="number" id="montoCajero" placeholder="Monto (múltiplo de 10)">
+        <button onclick="retirarDinero()">Retirar</button>
+        <p id="resCajero"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h3>5 Ordenamiento de Notas</h3>
+        <button onclick="ordenarEstudiantes()">Ordenar [Ana:8, Juan:10, Pepe:5]</button>
+        <div id="resNotas"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
